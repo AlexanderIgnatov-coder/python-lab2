@@ -33,7 +33,7 @@ for r in filter[:3]:
 
 
 bibs = random.sample(rows, 20)
-with open('bibliography.txt', 'w', encoding='utf-8') as f:
+with open('bibliography.txt', 'w') as f:
     for i, b in enumerate(bibs, 1):
         f.write(f"{i}. {b[author_key]}. {b[title_key]} - {b[date_key]}\n")
 input("press enter")
@@ -51,4 +51,5 @@ for val in root.findall('.//Valute'):
 
 print('NumCode - CharCode:')
 for n, c in num_code_to_char_code.items():
+
     print(f"{n} - {c}")
